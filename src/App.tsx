@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 
-const holidays2024 = [
+const holidays2023 = [
   { name: 'Proclamação da Independência', date: '2023-09-07' },
   { name: 'Nossa Sr.a Aparecida', date: '2023-10-12' },
   { name: 'Finados', date: '2023-11-02' },
@@ -16,7 +16,7 @@ export default function App() {
   useEffect(() => {
     const today = new Date();
 
-    const newCounters = holidays2024.map((holiday) => {
+    const newCounters = holidays2023.map((holiday) => {
       const holidayDate: Date = new Date(holiday.date);
       const timeRemaining: number =
         holidayDate > today ? holidayDate - today : 0;
